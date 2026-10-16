@@ -1,0 +1,20 @@
+name: uspk-teacher-demo
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: uspk_demo
+      POSTGRES_USER: uspk_demo
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run demo-init.ps1 first}
+    ports:
+      - "127.0.0.1:55433:5432"
+    volumes:
+      - demo_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U uspk_demo -d uspk_demo"]
+      interval: 2s
+      timeout: 2s
+      retries: 30
+volumes:
+  demo_data:
+    name: uspk_teacher_demo_data

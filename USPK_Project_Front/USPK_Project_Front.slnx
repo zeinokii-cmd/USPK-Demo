@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="USPK_Project_Front/uspk_project_front.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>

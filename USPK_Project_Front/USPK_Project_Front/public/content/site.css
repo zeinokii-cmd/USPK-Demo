@@ -1,0 +1,33 @@
+.navbar {
+    background: rgba(26, 26, 46, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.nav-logout { border: 0; background: transparent; cursor: pointer; }
+.auth-card {
+    max-width: 440px;
+    margin: 48px auto;
+    padding: 28px;
+    border: 1px solid #d7d9e0;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(26, 26, 46, .08);
+    font-family: system-ui, sans-serif;
+}
+.auth-card h1 { margin-top: 0; color: #1a1a2e; }
+.auth-card form { display: grid; gap: 10px; }
+.auth-card label { font-weight: 600; }
+.auth-card input { padding: 10px 12px; border: 1px solid #aeb2bf; border-radius: 6px; font: inherit; }
+.auth-card button[type="submit"] { margin-top: 12px; padding: 11px; border: 0; border-radius: 6px; background: #1a1a2e; color: white; font: inherit; cursor: pointer; }
+.auth-card button:disabled { opacity: .65; cursor: wait; }
+.form-error { color: #a11929; }
+.form-success { color: #14653c; }
